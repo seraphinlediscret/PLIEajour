@@ -112,6 +112,7 @@ h1
 .header_logos
 {
     padding-top: 2vh;
+    flex-wrap: unset!important;
 }
 
 
@@ -119,8 +120,8 @@ h1
 .menu
 {
     position: absolute;
-    top: 1.5vh;
-    left: 22.7vw;
+    top: 0.5vh;
+    left: 16.7vw;
     display: flex;
     flex-direction: row;
     font-size: 1.5rem;
@@ -132,14 +133,20 @@ h1
     font-size: 1.2em;
     text-decoration: none;
     color: whitesmoke;
+    border-top: 5px solid rgba(243, 235, 235, 0.5);
+    border-bottom: 5px solid rgba(243, 235, 235, 0.5);
+    font-weight: bolder;
+    padding-top: 2px;
+    
 }
 
 .butn
 {
-padding-left:5vw;
+padding-left: 5vw;
 padding-right: 5vw;
 transition-property: font-size;
-transition-duration: 0.4s;    
+transition-duration: 0.4s;
+font-weight: bolder;    
 }
 .collapse
 {
@@ -147,6 +154,9 @@ transition-duration: 0.4s;
 }
 #navbarDropdownMenuLink{
     color:white;
+}
+#navbarDropdownMenuLink:hover{
+    border-bottom:3px solid whitesmoke;
 }
 .orange
 {
@@ -182,6 +192,7 @@ transition-duration: 0.4s;
     background-color:rgb(22, 214, 102);
     margin-left: -10px;
     text-align: center;
+    
 }
 
 .ai {
@@ -189,6 +200,7 @@ transition-duration: 0.4s;
     margin-left: -10px;
     text-align: center;
     background-color:rgb(255, 87, 87);
+   
 
 }
 
@@ -198,6 +210,7 @@ transition-duration: 0.4s;
     margin-left: -10px;
     text-align: center;
     background-color:rgb(210, 48, 221);
+   
 }
 
 .etti 
@@ -206,6 +219,7 @@ transition-duration: 0.4s;
     margin-left: -10px;
     text-align: center;
     background-color:  rgb(255, 161, 66);
+    
 }
 
 .question
@@ -220,6 +234,7 @@ transition-duration: 0.4s;
 .question:hover
 {
     color: rgba(0, 0, 0, 0.541);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.541);
 }
 
 /*************texte**********/
@@ -274,7 +289,301 @@ footer a:hover
 {
     width: 22%;
 }
+/*****LES 4 PAGES ANNEXES*****/
 
+/*Couleurs de fond de page*/
+.ai_background
+{
+    background: linear-gradient(90deg, rgb(131, 84, 84) 0%, rgb(211, 183, 183) 100%);
+}
+
+.aci_background
+{
+    background: linear-gradient(90deg, rgb(102, 136, 102) 0%, rgb(183, 211, 190) 100%);
+}
+
+.ei_background
+{
+    background: linear-gradient(90deg, rgb(126, 102, 136) 0%, rgb(204, 183, 211) 100%);
+}
+
+.etti_background
+{
+    background: linear-gradient(90deg, rgb(136, 120, 102) 0%, rgb(211, 201, 183) 100%);
+}
+
+/*Mise en forme des titres*/
+.centered_title-red, .centered_title-green, .centered_title-purple, .centered_title-orange
+{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 2%;
+}
+
+.ai-siae_title, .aci-siae_title, .ei-siae_title, .etti-siae_title
+{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 10vh;
+}
+
+/*Fond des titres*/
+.centered_title-red, .ai-siae_title
+{
+    background: linear-gradient(90deg, rgba(255,65,65,1) 0%, rgba(255,84,84,1) 27%, rgba(255,253,253,1) 100%);
+}
+
+.centered_title-green, .aci-siae_title
+{
+    background: linear-gradient(90deg, rgba(12,190,85,1) 0%, rgba(1,194,80,1) 35%, rgba(255,253,253,1) 100%);
+}
+
+.centered_title-purple, .ei-siae_title
+{
+    background: linear-gradient(90deg, rgba(182,1,195,1) 0%, rgba(244,88,255,1) 39%, rgba(255,253,253,1) 100%);
+}
+
+.centered_title-orange, .etti-siae_title
+{
+    background: linear-gradient(90deg, rgba(255,157,61,1) 0%, rgba(255,213,108,1) 82%, rgba(255,253,253,1) 100%);
+}
+
+
+/*Mise en forme des articles de présentation des siae*/
+.ai_presentation, .aci_presentation, .ei_presentation, .etti_presentation
+{
+    font-size: 1.5rem;
+    line-height: 6vh;
+}
+
+.ai_presentation 
+{
+    background: url(img/super-triangle3_red.png);
+    background-size: cover;
+}
+
+.aci_presentation 
+{
+    background: url(img/super-triangle3_green.png);
+    background-size: cover;
+}
+
+.ei_presentation 
+{
+    background: url(img/super-triangle3_purple.png);
+    background-size: cover;
+}
+
+.etti_presentation
+{
+    background: url(img/super-triangle3_orange.png);
+    background-size: cover;
+}
+
+.siae dl
+{
+    background: rgba(255, 237, 225, 0.637);
+    width: 75vw;
+    margin: 0%;
+}
+
+.ai_presentation dt
+{
+    background: rgba(255,65,65,1);
+    color: white;
+    margin-right: 3vw;
+}
+
+.aci_presentation dt
+{
+    background: rgba(12,190,85,1);
+    color: white;
+    margin-right: 3vw;
+}
+
+.ei_presentation dt
+{
+    background: rgba(182,1,195,1);
+    color: white;
+    margin-right: 3vw;
+}
+
+.etti_presentation dt
+{
+    background:rgba(255,157,61,1);
+    color: white;
+    margin-right: 3vw;
+}
+
+.ai_presentation dd
+{
+    border-left: 2px solid white; 
+    color:rgb(77, 15, 15);
+    margin-right: 3vw;
+    padding: 4%;
+}
+
+.aci_presentation dd
+{
+    border-left: 2px solid white;
+    color:  rgb(3, 70, 31);
+    margin-right: 3vw;
+    padding: 4%;
+}
+
+.ei_presentation dd
+{
+    border-left: 2px solid white;
+    color: rgb(49, 0, 53);
+    margin-right: 3vw;
+    padding: 4%;
+}
+
+.etti_presentation dd
+{
+    border-left: 2px solid white;
+    color:  rgb(87, 52, 17);
+    margin-right: 3vw;
+    padding: 4%;
+}
+
+
+
+/*Mise en forme des listes de définition*/
+dl
+{
+    padding: 5%;
+    margin: 2%;
+    font-size: 1.5rem;
+}
+
+dt
+{
+    font-variant: small-caps;
+}
+
+dd, dt
+{
+    padding-top: 1%;
+}
+
+/*Mise en forme des repertoires*/
+.ai_repertory, .aci_repertory, .ei_repertory, .etti_repertory 
+{
+    font-size: 1.2em;
+    padding-top: 0%;
+}
+
+.ai_repertory dl
+{
+    width: 75vw;
+    margin: 0px;
+}
+.aci_repertory dl 
+{
+    width: 75vw;
+    margin: 0px;
+}
+.ei_repertory dl
+{
+    width: 75vw;
+    margin: 0px;
+}
+.etti_repertory dl
+{
+    width: 75vw;
+    margin: 0px;
+}
+
+.imago
+{
+    margin: 0px;
+}
+
+
+/*Définition des paragraphes descriptifs des SIAE*/
+.ai_para, .aci_para
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.ai_para
+{
+    color: rgb(122, 1, 1);
+}
+
+.aci_para
+{
+    color: rgb(0, 87, 0);
+}
+
+/*Définition des footers*/
+
+.ai_footer
+{
+    background: rgba(255,65,65,1);
+}
+
+.aci_footer
+{
+    background: rgba(12,190,85,1);
+}
+
+.ei_footer
+{
+    background: rgba(182,1,195,1);
+}
+
+.etti_footer
+{
+    background: rgba(255,157,61,1);
+}
+
+/*Style des liens mail des répertoires*/
+
+.ai_repertory a
+{
+    color: rgba(255,65,65,1);
+}
+
+.aci_repertory a
+{
+    color: rgba(12,190,85,1);
+}
+
+.ei_repertory a
+{
+    color: rgba(182,1,195,1);
+}
+
+.etti_repertory a
+{
+    color: rgba(255,157,61,1);
+}
+
+.ai_repertory a:hover
+{
+    color: rgb(136, 32, 32);
+}
+
+.aci_repertory a:hover
+{
+    color:  rgb(8, 119, 52);
+}
+
+.ei_repertory a:hover
+{
+    color: rgb(94, 7, 100);
+}
+
+.etti_repertory a:hover
+{
+    color:  rgb(144, 89, 33);  
+}
 
 /***************responsive menu*********************/
 @media screen and (min-width: 768px){
@@ -316,7 +625,7 @@ footer a:hover
      }
 
      .butn{
-         padding-top: 1px;
+         padding-top: 7px;
          width: 280px;
     }
 
@@ -827,301 +1136,5 @@ section
 .iae__concept p, .people__target p
 {
     width: 40vw;
-}
-
-/*****LES 4 PAGES ANNEXES*****/
-
-/*Couleurs de fond de page*/
-.ai_background
-{
-    background: linear-gradient(90deg, rgb(131, 84, 84) 0%, rgb(211, 183, 183) 100%);
-}
-
-.aci_background
-{
-    background: linear-gradient(90deg, rgb(102, 136, 102) 0%, rgb(183, 211, 190) 100%);
-}
-
-.ei_background
-{
-    background: linear-gradient(90deg, rgb(126, 102, 136) 0%, rgb(204, 183, 211) 100%);
-}
-
-.etti_background
-{
-    background: linear-gradient(90deg, rgb(136, 120, 102) 0%, rgb(211, 201, 183) 100%);
-}
-
-/*Mise en forme des titres*/
-.centered_title-red, .centered_title-green, .centered_title-purple, .centered_title-orange
-{
-    color: white;
-    font-size: 4em;
-    text-align: center;
-    padding: 2%;
-}
-
-.ai-siae_title, .aci-siae_title, .ei-siae_title, .etti-siae_title
-{
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    padding: 1%;
-    margin-bottom: 10vh;
-}
-
-/*Fond des titres*/
-.centered_title-red, .ai-siae_title
-{
-    background: linear-gradient(90deg, rgba(255,65,65,1) 0%, rgba(255,84,84,1) 27%, rgba(255,253,253,1) 100%);
-}
-
-.centered_title-green, .aci-siae_title
-{
-    background: linear-gradient(90deg, rgba(12,190,85,1) 0%, rgba(1,194,80,1) 35%, rgba(255,253,253,1) 100%);
-}
-
-.centered_title-purple, .ei-siae_title
-{
-    background: linear-gradient(90deg, rgba(182,1,195,1) 0%, rgba(244,88,255,1) 39%, rgba(255,253,253,1) 100%);
-}
-
-.centered_title-orange, .etti-siae_title
-{
-    background: linear-gradient(90deg, rgba(255,157,61,1) 0%, rgba(255,213,108,1) 82%, rgba(255,253,253,1) 100%);
-}
-
-
-/*Mise en forme des articles de présentation des siae*/
-.ai_presentation, .aci_presentation, .ei_presentation, .etti_presentation
-{
-    font-size: 1.5rem;
-    line-height: 6vh;
-}
-
-.ai_presentation 
-{
-    background: url(img/super-triangle3_red.png);
-    background-size: cover;
-}
-
-.aci_presentation 
-{
-    background: url(img/super-triangle3_green.png);
-    background-size: cover;
-}
-
-.ei_presentation 
-{
-    background: url(img/super-triangle3_purple.png);
-    background-size: cover;
-}
-
-.etti_presentation
-{
-    background: url(img/super-triangle3_orange.png);
-    background-size: cover;
-}
-
-.siae dl
-{
-    background: rgba(255, 237, 225, 0.637);
-    width: 75vw;
-    margin: 0%;
-}
-
-.ai_presentation dt
-{
-    background: rgba(255,65,65,1);
-    color: white;
-    margin-right: 3vw;
-}
-
-.aci_presentation dt
-{
-    background: rgba(12,190,85,1);
-    color: white;
-    margin-right: 3vw;
-}
-
-.ei_presentation dt
-{
-    background: rgba(182,1,195,1);
-    color: white;
-    margin-right: 3vw;
-}
-
-.etti_presentation dt
-{
-    background:rgba(255,157,61,1);
-    color: white;
-    margin-right: 3vw;
-}
-
-.ai_presentation dd
-{
-    border-left: 2px solid white; 
-    color:rgb(77, 15, 15);
-    margin-right: 3vw;
-    padding: 4%;
-}
-
-.aci_presentation dd
-{
-    border-left: 2px solid white;
-    color:  rgb(3, 70, 31);
-    margin-right: 3vw;
-    padding: 4%;
-}
-
-.ei_presentation dd
-{
-    border-left: 2px solid white;
-    color: rgb(49, 0, 53);
-    margin-right: 3vw;
-    padding: 4%;
-}
-
-.etti_presentation dd
-{
-    border-left: 2px solid white;
-    color:  rgb(87, 52, 17);
-    margin-right: 3vw;
-    padding: 4%;
-}
-
-
-
-/*Mise en forme des listes de définition*/
-dl
-{
-    padding: 5%;
-    margin: 2%;
-    font-size: 1.5rem;
-}
-
-dt
-{
-    font-variant: small-caps;
-}
-
-dd, dt
-{
-    padding-top: 1%;
-}
-
-/*Mise en forme des repertoires*/
-.ai_repertory, .aci_repertory, .ei_repertory, .etti_repertory 
-{
-    font-size: 1.2em;
-    padding-top: 0%;
-}
-
-.ai_repertory dl
-{
-    width: 75vw;
-    margin: 0px;
-}
-.aci_repertory dl 
-{
-    width: 75vw;
-    margin: 0px;
-}
-.ei_repertory dl
-{
-    width: 75vw;
-    margin: 0px;
-}
-.etti_repertory dl
-{
-    width: 75vw;
-    margin: 0px;
-}
-
-.imago
-{
-    margin: 0px;
-}
-
-
-/*Définition des paragraphes descriptifs des SIAE*/
-.ai_para, .aci_para
-{
-    text-align: center;
-    font-weight: bold;
-}
-
-.ai_para
-{
-    color: rgb(122, 1, 1);
-}
-
-.aci_para
-{
-    color: rgb(0, 87, 0);
-}
-
-/*Définition des footers*/
-
-.ai_footer
-{
-    background: rgba(255,65,65,1);
-}
-
-.aci_footer
-{
-    background: rgba(12,190,85,1);
-}
-
-.ei_footer
-{
-    background: rgba(182,1,195,1);
-}
-
-.etti_footer
-{
-    background: rgba(255,157,61,1);
-}
-
-/*Style des liens mail des répertoires*/
-
-.ai_repertory a
-{
-    color: rgba(255,65,65,1);
-}
-
-.aci_repertory a
-{
-    color: rgba(12,190,85,1);
-}
-
-.ei_repertory a
-{
-    color: rgba(182,1,195,1);
-}
-
-.etti_repertory a
-{
-    color: rgba(255,157,61,1);
-}
-
-.ai_repertory a:hover
-{
-    color: rgb(136, 32, 32);
-}
-
-.aci_repertory a:hover
-{
-    color:  rgb(8, 119, 52);
-}
-
-.ei_repertory a:hover
-{
-    color: rgb(94, 7, 100);
-}
-
-.etti_repertory a:hover
-{
-    color:  rgb(144, 89, 33);  
 }
 }
