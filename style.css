@@ -861,7 +861,6 @@ p
 {
     background-image: url(img/worker2.jpg);  
     background-size: cover;
-    height: 85vh;
 }
 
 .people__target p
@@ -1083,8 +1082,6 @@ footer > p
     font-weight: bold;
     font-size: 1.7rem;
 }
-
-
 
 @media screen and (min-width: 1000px)
 {
